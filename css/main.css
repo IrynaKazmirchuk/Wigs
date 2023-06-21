@@ -1,0 +1,171 @@
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 52px;
+  height: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template: auto 1fr / 252px 1fr;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  background: rgba(255, 255, 255, 0.8);
+}
+aside {
+  grid-area: aside;
+}
+/* HEADER */
+.header {
+  grid-area: header;
+  display: grid;
+  padding-top: 45px;
+  padding-bottom: 70px;
+  grid-template: 1fr / 1fr 1fr minmax(auto, 470px) minmax(auto, 75px);
+  gap: 11px;
+}
+.header-menu {
+  grid-column: 3 / 4;
+}
+.header-list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: end;
+  gap: 42px;
+}
+.header-link {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+.header-icons {
+  grid-column: 4 / 5;
+}
+.icons-list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: end;
+  gap: 25px;
+}
+.products::before {
+  content: "";
+  display: block;
+  bottom: -50px;
+  height: 1px;
+  background: #000;
+  transform: translateY(30px);
+}
+/* HEADER END */
+.main {
+  display: grid;
+  grid-area: main;
+}
+.gallery {
+  display: grid;
+  margin-left: 37px;
+  margin-bottom: 64px;
+  grid-template-columns: repeat(4, 260px);
+  grid-template-rows: repeat(4, 180px);
+  gap: 20px;
+  grid-template-areas:
+    "sale sale product1 product2"
+    "summer summer product1 product2"
+    "product3 product4 trend trend"
+    "product3 product4 new new";
+}
+.sale {
+  grid-area: sale;
+}
+.product-1 {
+  grid-area: product1;
+  position: relative;
+}
+.heart-2 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.product-2 {
+  grid-area: product2;
+}
+.product-3 {
+  grid-area: product3;
+}
+.home {
+  border-radius: 15px;
+}
+.product-4 {
+  grid-area: product4;
+}
+.trend {
+  grid-area: trend;
+}
+.new {
+  grid-area: new;
+}
+.summer-sale {
+  grid-area: summer;
+}
+/* ASIDE */
+.aside {
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 12px;
+  padding: 51px 55px 423px;
+}
+.explore {
+  margin-top: 57px;
+  margin-bottom: 54px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+.aside ul {
+  display: grid;
+  gap: 30px;
+}
+.aside li {
+  position: relative;
+  padding-left: 35px;
+}
+.aside li::before {
+  left: 0;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.aside .new-in::before {
+  background-image: url("../img/icons/light.png");
+}
+.aside .clothing::before {
+  background-image: url("../img/icons/close.png");
+}
+.aside .shoes::before {
+  background-image: url("../img/icons/shoes.png");
+}
+.aside .accessories::before {
+  background-image: url("../img/icons/bags.png");
+}
+.aside .activewear::before {
+  background-image: url("../img/icons/active.png");
+}
+.aside .gifts::before {
+  background-image: url("../img/icons/gifts.png");
+}
+.aside .inspiration::before {
+  background-image: url("../img/icons/diamant.png");
+}
+.aside nav a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15.7099px;
+  line-height: 19px;
+  color: #000000;
+}
+/* ASIDE END */

@@ -1,0 +1,16 @@
+@media screen and (max-width: 850px) {
+  .gallery {
+    grid-template-columns: repeat(2, 260px);
+    grid-template-rows: repeat(8, 180px);
+    gap: 20px;
+    grid-template-areas:
+      "sale sale"
+      "summer summer"
+      "product1 product2"
+      "product1 product2"
+      "product3 product4"
+      "product3 product4"
+      "trend trend"
+      "new new";
+  }
+}
